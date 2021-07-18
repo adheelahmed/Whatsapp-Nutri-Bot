@@ -1,5 +1,4 @@
 const puppeteer = require("puppeteer");
-var shell = require('shelljs');
 const schedule = require('node-schedule');
 
 // const job is the message to be done 
@@ -11,6 +10,7 @@ const job = schedule.scheduleJob('7 12 * * *' /* change the value sec(*)  min(*)
     await runBot(a,b,c);
     await console.log(`${a} Done`);
   });
+
 
 // Since we are sending to two groups at two different times, copy/paste the jobs for more
 
